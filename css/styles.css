@@ -15,7 +15,7 @@
 
 /* SDPBRN blue colour scheme */
 
-:root {
+/* :root {
   --primaryColor: #12609d;
   --primaryColor30: #12609d26;
   --primaryColor60: #12609d99; 
@@ -23,29 +23,34 @@
   --darkColor: #0A3A5E;
   --blackColor: #384046;
   --accentColor: #020ad1;
-}
+} */
 
 /* SDCEP dark purple colour scheme */
-/* 
-:root {
-  --primaryColor: #466393;
-  --primaryColor30: #307DA126;
-  --lightColor: #f6f7ff;
-  --darkColor: #2d405f;
+
+/* :root {
+  
+  --primaryColor: #3B2E63;
+  --primaryColor30: #3B2E6326;
+  --primaryColor60: #3B2E6399; 
+  --lightColor: #FBF8FF;
+  --darkColor: #22154B;
   --blackColor: #384046;
-  --accentColor: #3b4ef8;
+  --accentColor: #17728B;
 } */
 
 /* TRiaDS light purple colour scheme */
 
-/* :root {
-  --primaryColor: #466393;
-  --primaryColor30: #307DA126;
-  --lightColor: #f6f7ff;
-  --darkColor: #2d405f;
+:root {
+  --primaryColor: #976BA2;
+  --primaryColor30: #976BA226;
+  --primaryColor60: #976BA299; 
+  /* --lightColor: #FFF8FF; */
+  /* --lightColor: #F5F6FF; */
+  --lightColor: #FAFAFA;
+  --darkColor: #54335D;
   --blackColor: #384046;
-  --accentColor: #3b4ef8;
-} */
+  --accentColor: #5BA389;
+}
 
 /*--------------------------------------------------------------
 # Sections General

@@ -1,8 +1,8 @@
 new Swiper('.highlights-slider', {
-    speed: 600,
+    speed: 800,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 9000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -21,5 +21,6 @@ new Swiper('.highlights-slider', {
         slidesPerView: 1,
         spaceBetween: 20
       }
-    }
+    },
+    effect: 'fade' 
   });

@@ -1,14 +1,50 @@
+/*--------------------------------------------------------------
+# Colours
+--------------------------------------------------------------*/
+
+/* Default colour scheme */
+/* 
 :root {
-  --lightBlue: #67b0d1;
   --primaryColor: #466393;
   --primaryColor30: #307DA126;
-  --darkColor: #263f49;
   --lightColor: #f6f7ff;
-  --darkGray: #2d405f;
+  --darkColor: #2d405f;
   --blackColor: #384046;
-  --highlightPurp: #3b4ef8;
-  --darkBlue: #2d405f;
+  --accentColor: #3b4ef8;
+} */
+
+/* SDPBRN blue colour scheme */
+
+:root {
+  --primaryColor: #12609d;
+  --primaryColor30: #12609d26;
+  --lightColor: #f8fcff;
+  --darkColor: #043052;
+  --blackColor: #384046;
+  --accentColor: #020ad1;
 }
+
+/* SDCEP dark purple colour scheme */
+/* 
+:root {
+  --primaryColor: #466393;
+  --primaryColor30: #307DA126;
+  --lightColor: #f6f7ff;
+  --darkColor: #2d405f;
+  --blackColor: #384046;
+  --accentColor: #3b4ef8;
+} */
+
+/* TRiaDS light purple colour scheme */
+
+/* :root {
+  --primaryColor: #466393;
+  --primaryColor30: #307DA126;
+  --lightColor: #f6f7ff;
+  --darkColor: #2d405f;
+  --blackColor: #384046;
+  --accentColor: #3b4ef8;
+} */
 
 /*--------------------------------------------------------------
 # Sections General
@@ -69,7 +105,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: var(--darkBlue);
+  color: var(--darkColor);
 }
 
 p, ul li {
@@ -102,7 +138,7 @@ ul li {
 }
 
 ul li::marker {
-  color: var(--highlightPurp);
+  color: var(--accentColor);
 }
 
 ul li i {
@@ -173,7 +209,7 @@ ul li i {
 
 .top-brand p:nth-child(2) {
   margin-top: -0.6rem;
-  color: var(--darkGray);
+  color: var(--blackColor);
 }
 
 /* Search bar */
@@ -264,7 +300,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
-    color: var(--darkColor);
+    color: var(--blackColor);
     white-space: nowrap;
     transition: 0.3s;
     border-bottom: 2px solid var(--lightColor);
@@ -282,8 +318,8 @@ nav {
   }
 
   .navbar a:hover, .navbar .active, .navbar li:hover > a {
-    color: var(--highlightPurp);
-    border-color: var(--highlightPurp);
+    color: var(--accentColor);
+    border-color: var(--accentColor);
   }
   
   .navbar .dropdown ul {
@@ -494,7 +530,7 @@ nav {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #466393;
+  background: var(--primaryColor);
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -516,21 +552,24 @@ nav {
   margin-bottom: 30px;
 }
 
-.about .content .about-btn {
+#main .about .content .about-btn {
   display: inline-block;
   background: rgba(255, 255, 255, 0.05);
   padding: 6px 30px 8px 30px;
   color: #fff;
   border-radius: 10px;
   transition: 0.3s;
+   
 }
 
-.about .content .about-btn a {
-  text-decoration: none;
-}
+
 
 .about .content .about-btn i {
   font-size: 14px;
+}
+
+.about-btn a {
+  color: var(--blackColor);
 }
 
 .about .content .about-btn:hover {
@@ -589,15 +628,23 @@ nav {
   /* border: 3px solid white; */
   margin: 10px 0;
   /* color: #fff; */
-  color: var(--highlightPurp);
+  color: var(--accentColor);
   /* color: var(--primaryColor); */
   border-radius: 15px;
   transition: 0.3s;
+  float: right;
+  box-shadow: 0px 0px 20px 0px rgba(11, 35, 65, 0.2);
+
  
 }
 
-.about a {
-  text-decoration: none!important;
+#main .about .about-btn {
+  text-decoration: none;
+  z-index: 99999999;
+}
+
+#main .about .about-btn i {
+  padding-left: 0.2rem;
 }
 
 .highlights .highlight-wrap {
@@ -613,7 +660,7 @@ nav {
   box-sizing: content-box;
   /* padding: 30px 30px 30px 60px; */
   margin: 30px 15px;
-  /* min-height: 200px; */
+  min-height: 350px;
   /* box-shadow: 0px 0px 20px 0px rgba(11, 35, 65, 0.1); */
   position: relative;
   background: var(--primaryColor);
@@ -673,6 +720,7 @@ nav {
 .highlights .swiper-pagination {
   margin-top: 20px;
   /* position: relative; */
+  
 }
 
 .highlights .swiper-pagination .swiper-pagination-bullet {
@@ -752,7 +800,7 @@ nav {
 --------------------------------------------------------------*/
 
 .bg-dark-blue, .bg-dark-blue h2 {
-  background-color: var(--darkBlue);
+  background-color: var(--darkColor);
   color: #fff;
 }
 
@@ -781,7 +829,7 @@ nav {
   
    .news .icon-box h4  {
   /* color: #384046; */
-  color: var(--darkBlue);
+  color: var(--darkColor);
   transition: 0.3s;
   /* font-size: 22px; */
   }
@@ -989,7 +1037,7 @@ color: #fff;
 footer {
   font-size: 1.13rem;
   line-height: 2.26rem;
-  background-color: var(--darkColor);
+  background-color: var(--blackColor);
   color: #ffffff;
 }
 
@@ -1044,7 +1092,7 @@ color: #ffffff;
     /* background-color: #1d303f; */
     background-color: var(--lightColor);
     /* color: #ffffff; */
-    color: var(--darkColor);
+    color: var(--blackColor);
 }
 
 /* footer pdf  */
@@ -1073,7 +1121,7 @@ footer .container-fluid {
 
 .footer a {
   
-  color: var(--darkGray); }
+  color: var(--blackColor); }
 
 .footer ul {
   padding: 0;
@@ -1113,7 +1161,7 @@ footer .container-fluid {
 .logo-container-footer {
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: flex-start; }
 
 .logo-container-footer-mob {
   display: flex;
@@ -1136,7 +1184,8 @@ footer .container-fluid {
 .logo-text-footer {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem; }
+  /* margin-top: 2rem; */
+ }
 
 .logo-text-footer p {
   margin-bottom: 0;
@@ -1155,7 +1204,7 @@ footer .container-fluid {
    /* background-color: #1d303f; */
    background-color: var(--lightColor);
    /* color: #ffffff; */
-   color: var(--darkColor);}
+   color: var(--blackColor);}
 
 .footer-last a {
   color: #212121; }
@@ -1166,7 +1215,7 @@ footer .container-fluid {
 
 
  footer .fa-chevron-right {
-   color: var(--highlightPurp);
+   color: var(--accentColor);
    padding-right: 0.5rem;
    padding-left: 0.5rem;
  }
@@ -1174,4 +1223,42 @@ footer .container-fluid {
  footer ul li {
   text-indent: -1.36rem;
   padding-left: 2.3rem;
+}
+
+.social-footer ul li {
+  text-indent: 0;
+  padding-left: 0;
+}
+
+.social-footer ul li a i {
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+  color: var(--primaryColor);
+}
+
+
+
+
+
+.social-footer ul li a:hover i  {
+  color: var(--accentColor);
+  animation: icons-rise 0.3s linear forwards;
+}
+
+@keyframes icons-rise {
+  from {
+      transform: translateX(0px);
+  }
+  to {
+      transform: translate(2.5px, -2.5px);
+  }
+}
+
+
+.social-footer a:hover {
+  text-decoration: none;
+}
+
+.social-footer a:hover span{
+  text-decoration: underline;
 }

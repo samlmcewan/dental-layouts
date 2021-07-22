@@ -18,8 +18,9 @@
 :root {
   --primaryColor: #12609d;
   --primaryColor30: #12609d26;
+  --primaryColor60: #12609d99; 
   --lightColor: #f8fcff;
-  --darkColor: #043052;
+  --darkColor: #0A3A5E;
   --blackColor: #384046;
   --accentColor: #020ad1;
 }

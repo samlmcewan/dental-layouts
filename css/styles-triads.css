@@ -10,7 +10,8 @@
   --primaryColor60: #976BA299; 
   /* --lightColor: #FFF8FF; */
   /* --lightColor: #F5F6FF; */
-  --lightColor: #FAFAFA;
+  /* --lightColor: #FAFAFA; */
+  --lightColor: #F8F9Fa;
   --darkColor: #54335D;
   --blackColor: #384046;
   --accentColor: #5BA389;
@@ -22,7 +23,8 @@
   --primaryColor: #2B827E;
   --primaryColor30: #2B827E26;
   --primaryColor60: #2B827E99; 
-  --lightColor: #FAFAFA;
+  /* --lightColor: #FAFAFA; */
+  --lightColor: #F8F9Fa;
   --darkColor: #1C5451;
   --blackColor: #384046;
   --accentColor: #54335D;

@@ -205,6 +205,9 @@ ul li i {
   padding: 0.5rem;
   padding-right: 0; }
 
+.input-group {
+  width: 70%; }
+
 /*--------------------------------------------------------------
 ** Main navigation
 --------------------------------------------------------------*/
@@ -324,7 +327,7 @@ nav {
 .navigation-mobile, #header-mobile {
   display: none; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .navbar .mobile-brand {
     color: #437099; }
 
@@ -332,7 +335,11 @@ nav {
     display: none !important; }
 
   .navigation-mobile, #header-mobile {
-    display: flex !important; }
+    display: flex !important;
+    justify-content: center; }
+
+  #header-mobile {
+    background-color: var(--primaryColor); }
 
   .navbar {
     background-color: #ffffff;
@@ -357,7 +364,8 @@ nav {
     padding: 0.9rem;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 3px solid #1977cc; }
+    border-bottom: 3px solid var(--primaryColor);
+    align-items: center; }
 
   .all-arrow {
     padding-right: 0.5rem; } }
@@ -395,13 +403,13 @@ nav {
   transition: .25s ease-in-out; }
 
 .animated-icon1 span {
-  background: #1977cc; }
+  background: #007bff; }
 
 .animated-icon2 span {
-  background: #1977cc; }
+  background: #007bff; }
 
 .animated-icon3 span {
-  background: #1977cc; }
+  background: #007bff; }
 
 .animated-icon1 span:nth-child(1) {
   top: 0px; }
@@ -1302,7 +1310,13 @@ footer ul li a:hover .fa-chevron-right {
     font-size: 18px; }
 
   #features .icon-large i {
-    font-size: 15rem; } }
+    font-size: 15rem; }
+
+  .input-group {
+    width: 66%; }
+
+  .mob-logo {
+    width: 66%; } }
 @media (min-width: 992px) {
   /*--------------------------------------------------------------
 # Sections General
@@ -1481,6 +1495,9 @@ footer ul li a:hover .fa-chevron-right {
 
   .search-bar {
     border-radius: 5px; }
+
+  .input-group {
+    width: 100%; }
 
   /* NES logo */
   .nes-logo-top {

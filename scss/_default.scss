@@ -1544,9 +1544,18 @@ left: 8px;
     font-size: 1.25rem; }
   
   .mob-footer-accordian a {
-    color: var(--black);
+    color: var(--blackColor);
      }
   
+     .mob-footer-accordian a i{
+      color: $accentColor;
+      font-size: 2rem;
+       }
+
+       #footerCollapse_3 li {
+        padding-bottom: 0.5rem;
+    }
+
   .footer-accordian-header {
     background-color: transparent;
     border: none;

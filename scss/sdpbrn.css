@@ -1206,7 +1206,14 @@ footer .container-fluid {
   font-size: 1.25rem; }
 
 .mob-footer-accordian a {
-  color: var(--black); }
+  color: var(--blackColor); }
+
+.mob-footer-accordian a i {
+  color: #007bff;
+  font-size: 2rem; }
+
+#footerCollapse_3 li {
+  padding-bottom: 0.5rem; }
 
 .footer-accordian-header {
   background-color: transparent;
@@ -2422,6 +2429,9 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
     justify-content: flex-end;
     align-items: flex-start;
     margin-top: 0; }
+
+  #footerCollapse_3 li {
+    padding-bottom: 0; }
 
   .logo-container-footer-mob {
     display: flex;

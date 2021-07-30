@@ -106,6 +106,9 @@ ul li i {
   /* padding-right: 0.3rem; */
   /* color: $blackColor; */ }
 
+#content ol li::marker {
+  color: #007bff; }
+
 #content h2 {
   padding-top: 0; }
 
@@ -614,7 +617,7 @@ li.breadcrumb-item.active, span.divider {
   /* color: $primaryColor; */
   border-radius: 5px;
   transition: 0.3s;
-  float: right;
+  float: left;
   box-shadow: 0px 0px 20px 0px rgba(11, 35, 65, 0.2); }
 
 #main .about .about-btn {
@@ -750,10 +753,12 @@ li.breadcrumb-item.active, span.divider {
   margin-bottom: 0; }
 
 #features .icon-large {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 #features .icon-large i {
-  font-size: 20rem;
+  font-size: 18rem;
   color: #12609d; }
 
 /*--------------------------------------------------------------
@@ -789,7 +794,7 @@ li.breadcrumb-item.active, span.divider {
   transition: 0.3s;
   /* font-size: 22px; */ }
 
-#main #landing-cards .news .landing-card a .icon-box h4 {
+#main #landing-cards .news .landing-card a .icon-box h4, #main #news .news .landing-card a .icon-box h4 {
   text-decoration: none; }
 
 .news .icon-box p {
@@ -805,7 +810,7 @@ li.breadcrumb-item.active, span.divider {
 .news .icon-box:hover h4 {
   color: #12609d; }
 
-#landing-cards .news a {
+#landing-cards .news a, #news .news a {
   text-decoration: none;
   /* background-color: #f7fbfe; */
   /* background-color: #1979cc11; */
@@ -873,7 +878,7 @@ li.breadcrumb-item.active, span.divider {
 
 .q-links {
   padding-top: 2rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 5rem; }
 
 .landing-cards .content {
   padding: 30px;
@@ -974,13 +979,13 @@ li.breadcrumb-item.active, span.divider {
 .landing-cards .icon-boxes .icon-box:hover h6, .landing-cards .icon-boxes .icon-box:hover ul li {
   color: #fff; }
 
-#landing-cards .landing-card {
+#landing-cards .landing-card, #news .landing-card {
   margin-top: 30px; }
 
 .icon-box-outer, .icon-box {
   min-height: 100%; }
 
-.landing-cards .icon-boxes a, #landing-cards .landing-card a {
+.landing-cards .icon-boxes a, #landing-cards .landing-card a, #news .landing-card a {
   text-decoration: none; }
 
 .icon-box-outer-hide {
@@ -990,6 +995,9 @@ li.breadcrumb-item.active, span.divider {
 #landing-cards .card-topic {
   color: $primaryColor;
 } */
+.q-link-title {
+  margin-bottom: -20px; }
+
 /*--------------------------------------------------------------
 ** Footer
 --------------------------------------------------------------*/
@@ -2016,7 +2024,7 @@ footer ul li a:hover .fa-chevron-right {
 
   .q-links {
     padding-top: 2rem;
-    padding-bottom: 4rem; }
+    padding-bottom: 5rem; }
 
   .landing-cards .content {
     padding: 30px;
@@ -2338,5 +2346,8 @@ footer ul li a:hover .fa-chevron-right {
       transform: translateX(0px); }
     to {
       transform: translateX(3px); } } }
+@media only screen and (min-width: 1200px) {
+  .q-links {
+    padding-bottom: 4rem; } }
 
 /*# sourceMappingURL=sdpbrn.css.map */

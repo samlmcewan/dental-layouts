@@ -536,9 +536,6 @@ nav {
   margin-bottom: 10px;
   padding: 0; }
 
-.divider {
-  padding-left: 0.6rem; }
-
 /* 
 .bread {
     padding-left: 1rem;
@@ -573,9 +570,19 @@ nav {
 li.breadcrumb-item.active, span.divider {
   font-size: 1rem; }
 
+.breadcrumb-item + .breadcrumb-item, .breadcrumb-item {
+  padding-left: 0; }
+
+.divider {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem; }
+
 /*--------------------------------------------------------------
 # Side menu navigation
 --------------------------------------------------------------*/
+.side-desk {
+  display: none; }
+
 .side-title {
   font-size: 18px;
   font-weight: 500;
@@ -638,6 +645,9 @@ li.breadcrumb-item.active, span.divider {
     transform: translateX(0px); }
   to {
     transform: translateX(-3px); } }
+.inner-banner-img {
+  display: none; }
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1224,7 +1234,7 @@ footer .container-fluid {
 
 .logo-container-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start; }
 
 .logo-container-footer-mob {
@@ -1317,6 +1327,26 @@ footer ul li a:hover .fa-chevron-right {
     transform: translateX(0px); }
   to {
     transform: translateX(3px); } }
+.footer-accordian-header {
+  border-bottom: 3px solid #F3F6F9; }
+
+button.footer-accordian-header.accordion-toggle.collapsed.collapsible-link::after {
+  content: '\f054';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+  float: right;
+  color: #007bff; }
+
+button.footer-accordian-header.accordion-toggle.collapsible-link:after {
+  content: '\f078';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+  float: right;
+  color: #007bff; }
+
+.logo-container-footer {
+  margin-top: 3rem; }
+
 @media (min-width: 768px) {
   .highlight-text p {
     font-size: 18px; }
@@ -1325,13 +1355,19 @@ footer ul li a:hover .fa-chevron-right {
     font-size: 15rem; }
 
   .input-group {
-    width: 66%; }
+    width: 36%; }
 
   .mob-logo {
     width: 66%; }
 
   .partner-svg {
-    padding: 0; } }
+    padding: 0; }
+
+  .inner-banner-img {
+    display: block; }
+
+  .logo-container-footer {
+    margin-top: 3rem; } }
 @media (min-width: 992px) {
   /*--------------------------------------------------------------
 # Sections General
@@ -2384,7 +2420,8 @@ footer ul li a:hover .fa-chevron-right {
   .logo-container-footer {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin-top: 0; }
 
   .logo-container-footer-mob {
     display: flex;
@@ -2476,7 +2513,12 @@ footer ul li a:hover .fa-chevron-right {
     from {
       transform: translateX(0px); }
     to {
-      transform: translateX(3px); } } }
+      transform: translateX(3px); } }
+  .side-desk {
+    display: block; }
+
+  .side-mob {
+    display: none; } }
 @media only screen and (min-width: 1200px) {
   .q-links {
     padding-bottom: 4rem; } }

@@ -680,9 +680,7 @@ left: 8px;
     padding: 0;
   }
   
-  .divider {
-    padding-left: 0.6rem;
-  }
+ 
   
   /* 
   .bread {
@@ -726,11 +724,20 @@ left: 8px;
     font-size: 1rem;
   } 
   
-  
+  .breadcrumb-item+.breadcrumb-item, .breadcrumb-item {
+    padding-left: 0;
+  }
+  .divider {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
   
   /*--------------------------------------------------------------
   # Side menu navigation
   --------------------------------------------------------------*/
+  .side-desk {
+    display: none;
+  }
   
   .side-title {
     font-size: 18px;
@@ -820,6 +827,11 @@ left: 8px;
     }
   }
   
+
+
+  .inner-banner-img {
+    display: none;
+  }
   /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/
@@ -1561,7 +1573,7 @@ left: 8px;
   
   .logo-container-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start; }
   
   .logo-container-footer-mob {
@@ -1569,6 +1581,8 @@ left: 8px;
     flex-direction: column;
     align-items: center; }
   
+    
+
   .border-top-footer {
     border-top: 2px solid white; }
   
@@ -1681,3 +1695,27 @@ left: 8px;
     }
   }
  
+  .footer-accordian-header {
+    border-bottom: 3px solid $lightColor;
+  }
+
+  button.footer-accordian-header.accordion-toggle.collapsed.collapsible-link::after {
+    content: '\f054';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Pro";
+    float: right;
+    color: $accentColor;
+}
+
+button.footer-accordian-header.accordion-toggle.collapsible-link:after {
+  content: '\f078';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Pro";
+  float: right;
+  color: $accentColor;
+
+}
+
+.logo-container-footer {
+  margin-top: 3rem;
+}

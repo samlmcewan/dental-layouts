@@ -1349,7 +1349,10 @@
   .logo-container-footer {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start; }
+    align-items: flex-start;
+  margin-top: 0; }
+
+    
   
   .logo-container-footer-mob {
     display: flex;
@@ -1467,5 +1470,10 @@
       transform: translateX(3px);
     }
   }
- 
+  .side-desk {
+    display: block;
+  }
+  .side-mob {
+    display: none;
+  }
 }

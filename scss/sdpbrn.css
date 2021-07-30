@@ -1102,6 +1102,18 @@ li.breadcrumb-item.active, span.divider {
   margin-bottom: -20px; }
 
 /*--------------------------------------------------------------
+** Partner programmes
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1199px) {
+  .partner-svg {
+    padding: 1rem; }
+
+  .partner-svg svg:first-of-type {
+    width: 100%; }
+
+  .partner-svg svg:last-of-type {
+    width: 85%; } }
+/*--------------------------------------------------------------
 ** Footer
 --------------------------------------------------------------*/
 footer {
@@ -1316,7 +1328,10 @@ footer ul li a:hover .fa-chevron-right {
     width: 66%; }
 
   .mob-logo {
-    width: 66%; } }
+    width: 66%; }
+
+  .partner-svg {
+    padding: 0; } }
 @media (min-width: 992px) {
   /*--------------------------------------------------------------
 # Sections General

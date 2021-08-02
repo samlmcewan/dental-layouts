@@ -978,18 +978,21 @@ left: 8px;
     flex-direction: column;
     border-radius: 5px;
     text-align: left;
+   
   }
   
   .highlight-svg {
     position: absolute;
     left: 0;
     z-index: 99999;
+   
   }
   
   .highlights .highlight-item .highlight-img {
     width: 300px;
     height: 300px;
     margin-right: 30px;
+    border: 3px solid var(--primaryColor);
     /* border-radius: 5px; */
     /* border: 6px solid #fff; */
     /* position: absolute; */

@@ -1213,7 +1213,7 @@ footer .container-fluid {
 
 .mob-footer-accordian a i {
   color: #007bff;
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 #footerCollapse_3 li {
   padding-bottom: 0.5rem; }
@@ -1309,7 +1309,7 @@ footer ul li {
   padding-left: 0; }
 
 .social-footer ul li a i {
-  font-size: 1.8rem;
+  font-size: 1rem;
   margin-right: 1.5rem;
   color: #12609d; }
 

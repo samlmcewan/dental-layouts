@@ -1931,6 +1931,9 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
   .about .content .about-btn:hover {
     background: rgba(255, 255, 255, 0.1); }
 
+  .about-btn {
+    float: right; }
+
   .about .icon-boxes .icon-box {
     margin-top: 30px; }
 

@@ -1211,7 +1211,24 @@
     color: $primaryColor;
   } */
   
+  #nes-logo, #nes-logo-footer {
+    .nes-logo-top path:nth-child(21), .nes-logo-top path:nth-child(22), .nes-footer path:nth-child(21), .nes-footer path:nth-child(22) {
+      opacity: 60%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      .nes-logo-top path:nth-child(21), .nes-logo-top path:nth-child(22), .nes-footer path:nth-child(21), .nes-footer path:nth-child(22) {
+        opacity: 100%;
+       }
+       .nes-logo-top path:not(:nth-child(21)):not(:nth-child(22)), .nes-footer path:not(:nth-child(21)):not(:nth-child(22)) {
+         opacity: 60%;
+       }
+    }
+
+  }
   
+
   
   
   

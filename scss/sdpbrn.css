@@ -2318,6 +2318,15 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
   #landing-cards .card-topic {
     color: $primaryColor;
   } */
+  #nes-logo .nes-logo-top path:nth-child(21), #nes-logo .nes-logo-top path:nth-child(22), #nes-logo .nes-footer path:nth-child(21), #nes-logo .nes-footer path:nth-child(22), #nes-logo-footer .nes-logo-top path:nth-child(21), #nes-logo-footer .nes-logo-top path:nth-child(22), #nes-logo-footer .nes-footer path:nth-child(21), #nes-logo-footer .nes-footer path:nth-child(22) {
+    opacity: 60%; }
+  #nes-logo:hover, #nes-logo-footer:hover {
+    cursor: pointer; }
+    #nes-logo:hover .nes-logo-top path:nth-child(21), #nes-logo:hover .nes-logo-top path:nth-child(22), #nes-logo:hover .nes-footer path:nth-child(21), #nes-logo:hover .nes-footer path:nth-child(22), #nes-logo-footer:hover .nes-logo-top path:nth-child(21), #nes-logo-footer:hover .nes-logo-top path:nth-child(22), #nes-logo-footer:hover .nes-footer path:nth-child(21), #nes-logo-footer:hover .nes-footer path:nth-child(22) {
+      opacity: 100%; }
+    #nes-logo:hover .nes-logo-top path:not(:nth-child(21)):not(:nth-child(22)), #nes-logo:hover .nes-footer path:not(:nth-child(21)):not(:nth-child(22)), #nes-logo-footer:hover .nes-logo-top path:not(:nth-child(21)):not(:nth-child(22)), #nes-logo-footer:hover .nes-footer path:not(:nth-child(21)):not(:nth-child(22)) {
+      opacity: 60%; }
+
   /*--------------------------------------------------------------
   ** Footer
   --------------------------------------------------------------*/

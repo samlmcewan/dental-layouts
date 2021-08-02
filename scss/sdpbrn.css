@@ -1584,12 +1584,16 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
   .navbar {
     padding: 0; }
 
+  #navbar {
+    display: block; }
+
   .navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
 
   .navbar li {
     position: relative;
@@ -1933,9 +1937,6 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
 
   .about .content .about-btn:hover {
     background: rgba(255, 255, 255, 0.1); }
-
-  .about-btn {
-    float: right; }
 
   .about .icon-boxes .icon-box {
     margin-top: 30px; }

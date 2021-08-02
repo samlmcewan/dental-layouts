@@ -1121,7 +1121,9 @@ left: 8px;
   /*--------------------------------------------------------------
   # News
   --------------------------------------------------------------*/
-  
+  #news-title {
+    padding-bottom: 0;
+  }
   .bg-dark-blue, .bg-dark-blue h2 {
     background-color: $darkColor;
     color: #fff;

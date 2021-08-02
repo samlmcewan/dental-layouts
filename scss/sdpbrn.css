@@ -877,6 +877,9 @@ li.breadcrumb-item.active, span.divider {
 /*--------------------------------------------------------------
 # News
 --------------------------------------------------------------*/
+#news-title {
+  padding-bottom: 0; }
+
 .bg-dark-blue, .bg-dark-blue h2 {
   background-color: #0A3A5E;
   color: #fff; }

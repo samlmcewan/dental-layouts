@@ -1066,17 +1066,16 @@ li.breadcrumb-item.active, span.divider {
 .landing-cards .icon-boxes .icon-box::before {
   content: '';
   position: absolute;
-  background: #cbe0fb;
+  background: #ffffff;
   right: 0;
   left: 0;
   bottom: 0;
-  top: 100%;
+  top: 0;
   transition: all 0.3s;
   z-index: -1; }
 
 .landing-cards .icon-boxes .icon-box:hover::before {
   background: #12609d;
-  top: 0;
   border-radius: 5px; }
 
 .landing-cards .icon-boxes .icon-box:hover {
@@ -2258,7 +2257,7 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
     font-size: 40px;
     color: #12609d;
     margin-bottom: 30px;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.8s ease-in-out; }
 
   .landing-cards .icon-boxes .icon-box h4 {
     font-size: 20px;
@@ -2280,12 +2279,12 @@ button.footer-accordian-header.accordion-toggle.collapsible-link:after {
   .landing-cards .icon-boxes .icon-box::before {
     content: '';
     position: absolute;
-    background: #cbe0fb;
+    background: #ffffff;
     right: 0;
     left: 0;
     bottom: 0;
     top: 100%;
-    transition: all 0.3s;
+    transition: all 0.8s;
     z-index: -1; }
 
   .landing-cards .icon-boxes .icon-box:hover::before {

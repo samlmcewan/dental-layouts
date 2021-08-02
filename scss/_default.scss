@@ -1357,18 +1357,19 @@ left: 8px;
   .landing-cards .icon-boxes .icon-box::before {
     content: '';
   position: absolute;
-  background: #cbe0fb;
+  background: #ffffff;
   right: 0;
   left: 0;
   bottom: 0;
-  top: 100%;
+  top: 0;
+  // top: 100%;
   transition: all 0.3s;
   z-index: -1;
   }
   
   .landing-cards .icon-boxes .icon-box:hover::before {
     background: $primaryColor;
-    top: 0;
+    // top: 0;
     border-radius: 5px;
   }
   

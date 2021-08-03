@@ -583,12 +583,13 @@ li.breadcrumb-item.active, span.divider {
 .side-desk {
   display: none; }
 
-.side-title {
+#side-menu .side-title a {
   font-size: 18px;
   font-weight: 500;
   /* padding: .75rem 1.25rem; */
   padding: 0.75rem 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: initial; }
 
 .side-menu {
   /* background-color: $lightColor; */
@@ -645,67 +646,6 @@ li.breadcrumb-item.active, span.divider {
     transform: translateX(0px); }
   to {
     transform: translateX(-3px); } }
-#main #side-menu-2 .list-group-item:hover {
-  background-color: #F1F5F8;
-  animation: sidebar-move 0.3s linear forwards; }
-@keyframes sidebar-move {
-  from {
-    transform: translateX(0px); }
-  to {
-    transform: translateX(5px); } }
-#main #side-menu-2 .hoverList-go {
-  /* color: #A4C2D6; */
-  background-color: #F1F5F8;
-  color: #1977cc;
-  animation: sidebar-move 0.1s linear forwards; }
-@keyframes sidebar-move {
-  from {
-    transform: translateX(0px); }
-  to {
-    transform: translateX(5px); } }
-#main #side-menu-2 .hoverList-leave {
-  background-color: #ffffff;
-  /* background-color: #F1F5F8; */
-  animation: sidebar-move-back 0.3s ease-in-out forwards; }
-@keyframes sidebar-move-back {
-  from {
-    transform: translateX(5px); }
-  to {
-    transform: translateX(0px); } }
-#main #side-menu-2 .list-group-item {
-  border: none;
-  /* border-top: 1px solid #437099; */
-  /* background-color: #1977cc; */
-  /* padding-left: 36px; */
-  margin: 8px 0px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 400; }
-#main #side-menu-2 .list-group-item:last-child {
-  border-radius: 10px; }
-#main #side-menu-2 a, #main #side-menu-2 .list-group-item:hover {
-  text-decoration: none; }
-#main #side-menu-2 .dropdown-header {
-  padding-left: 6px;
-  padding-top: 0px;
-  padding-bottom: 12px;
-  font-size: 16px;
-  font-weight: 500; }
-#main #side-menu-2 ul {
-  padding: 0; }
-#main #side-menu-2 a {
-  font-weight: 400; }
-#main #side-menu-2 .active {
-  background-color: #007bff; }
-#main #side-menu-2 .active a {
-  color: #ffffff; }
-#main #side-menu-2 .active:hover {
-  animation: none;
-  background-color: #007bff; }
-#main #side-menu-2 .active a:hover {
-  cursor: initial; }
-
 .inner-banner-img {
   display: none; }
 

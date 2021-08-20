@@ -1127,7 +1127,7 @@
     font-size: 40px;
     color: $primaryColor;
     margin-bottom: 30px;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   
   .landing-cards .icon-boxes .icon-box h4 {
@@ -1152,20 +1152,20 @@
   }
   /* hover styles  */
   .landing-cards .icon-boxes .icon-box::before {
-    content: '';
-  position: absolute;
+  //   content: '';
+  // position: absolute;
   background: #ffffff;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
+  // right: 0;
+  // left: 0;
+  // bottom: 0;
+  // top: 100%;
   transition: all 0.8s;
   z-index: -1;
   }
   
   .landing-cards .icon-boxes .icon-box:hover::before {
     background: $primaryColor;
-    top: 0;
+    // top: 0;
     border-radius: 5px;
   }
   
@@ -1213,6 +1213,9 @@
    
     
   }
+#landing-cards-sidebar .side-desk {
+  padding-top: calc(30px + 1.5rem);
+}
   
   /* 
   #landing-cards .card-topic {

@@ -11,7 +11,12 @@
     --blackColor: #384046;
     // --accentColor: #020ad1;
     --accentColor: #007bff;
-    --triadsColor: #2B827E;
+    // cyan triads color 
+    // --triadsColor: #2B827E; 
+// triads darker purple 
+    // --triadsColor: #6e417b;
+    // triads light and innacessible purple 
+    --triadsColor: #976ba2;
     --sdcepColor: #3B2E63;
   }
   
@@ -1522,6 +1527,9 @@ left: 8px;
     
   }
   
+  #landing-cards-sidebar h4 {
+    padding-top: 1rem;
+  }
   
    .icon-box-outer, .icon-box {
   
@@ -1548,6 +1556,9 @@ left: 8px;
   .q-link-title {
     margin-bottom: -20px;
 }
+
+
+ 
   
   /*--------------------------------------------------------------
   ** Partner programmes
